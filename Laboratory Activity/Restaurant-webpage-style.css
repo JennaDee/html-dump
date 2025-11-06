@@ -10,7 +10,7 @@ h1,
 h2,
 h3 {
     font-family: 'Playfair Display', serif;
-
+    color: #A8AD00;
 }
 
 header {
@@ -26,8 +26,9 @@ header {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
-section {
-    scroll-margin-top: 100px;
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
 }
 
 .logo1 {
@@ -36,7 +37,10 @@ section {
 }
 
 main {
-    padding: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
 }
 
 nav ul {
@@ -95,13 +99,19 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #E4E1DC;
 }
 
 .hero-text {
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(75, 46, 0, 0.4);
     padding: 40px;
     border-radius: 10px;
+    font-size: 30px;
+    text-shadow: 4px 5px 6px #4B2E00;
+}
+
+.hero-text2 {
+    color: white;
 }
 
 .map-section {
@@ -129,4 +139,70 @@ table {
 
 .contact {
     text-align: center;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4B2E00;
+}
+
+.block {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card1 {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card1 img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
 }

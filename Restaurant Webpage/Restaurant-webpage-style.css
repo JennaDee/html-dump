@@ -206,3 +206,17 @@ table {
     border-radius: 15px;
     object-fit: cover;
 }
+
+.cont {
+    color: #A8AD00;
+    /* normal link color */
+    text-decoration: none;
+    /* remove underline */
+    transition: color 0.3s;
+    /* smooth color change */
+}
+
+.cont:hover {
+    color: #4B2E00;
+    /* color when hovered */
+}

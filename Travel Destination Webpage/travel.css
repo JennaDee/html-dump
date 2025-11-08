@@ -1,0 +1,235 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #F5EEDD;
+}
+
+header {
+    width: 100%;
+    background-color: #077A7D;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F5EEDD;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #7AE2CF;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+    animation: scaleIn 1s ease-out forwards;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.banner {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('banner-img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    position: relative;
+    text-align: center;
+    color: #E4E1DC;
+}
+
+.banner-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #F5EEDD;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+
+main {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('bg01.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: #06202B;
+}
+
+.main-section2 {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('main2-bg.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: #06202B;
+}
+
+main::before,
+.main-section2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+main>*,
+.main-section2>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+.description {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.description h1,
+.gallery-section h1,
+.discover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.description p,
+.gallery-section p,
+.discover p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #E4E1DC;
+    margin-bottom: 30px;
+}
+
+.description {
+    background-color: rgba(245, 238, 221, 0.1);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.gallery-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 50px;
+    background-color: rgba(245, 238, 221, 0.1);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.gallery img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05) translateY(-20px);
+}
+
+.dicover h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.footer {
+    background-color: #077A7D;
+    color: #F5EEDD;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}

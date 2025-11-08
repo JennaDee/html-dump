@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Aranzamendez - Student Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #1a5276;
+        }
+
+        h1 {
+            color: #1a5276;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .title {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        h2 {
+            color: #1a5276;
+            border-bottom: 1px solid #1a5276;
+            padding-bottom: 5px;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        .summary {
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #1a5276;
+        }
+
+        .item-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            color: #34495e;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #1a5276;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                font-size: 12pt;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .skill {
+                background-color: #1a5276;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            h1 {
+                font-size: 18pt;
+            }
+
+            h2 {
+                font-size: 14pt;
+            }
+
+            .contact-info {
+                justify-content: space-between;
+            }
+
+            .copyright {
+                font-size: 10pt;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+
+            .item-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Sophia Aranzamendez</h1>
+            <div class="title">Computer Science Student</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> sophiarnzmndz@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> +63 976 281 3969
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong> #43 Agoncilla St., Magno 2 Subd., Brgy. Santa Monica, Novaliches, Quezon
+                    City
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong> linkedin.com/in/sophiaaranzamendez
+                </div>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p class="summary">
+                Motivated Computer Science student with a strong background in web development and problem-solving.
+                Currently pursuing a degree while developing technological skills through academic projects. Seeking
+                opportunities to apply and broaden my knowledge in a professional setting.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Bachelor of Science in Computer Science</div>
+                    <div class="item-date">2025 - Present</div>
+                </div>
+                <div class="item-subtitle">Pamantasan ng Lungsod ng Maynila</div>
+                <ul>
+                    <li>Currently pursuing degree in Computer Science</li>
+                    <li>Member of Google Developer Groups on Campus PLM</li>
+                    <li>Expected graduation: 2029</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Senior High School</div>
+                    <div class="item-date">2023 - 2025</div>
+                </div>
+                <div class="item-subtitle">Caloocan National Science and Technology High School</div>
+                <ul>
+                    <li>Graduated with Honors</li>
+                    <li>Member of Robotics Club</li>
+                    <li>Member of Creative Technologies Club</li>
+                    <li>First place in School Research Competition</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Junior High School</div>
+                    <div class="item-date">2019 - 2023</div>
+                </div>
+                <div class="item-subtitle">Caloocan City Business High School</div>
+                <ul>
+                    <li>Graduated with Honors</li>
+                    <li>Member of Robotics Club</li>
+                    <li>Participated in Science and Technology Fair</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Elementary School</div>
+                    <div class="item-date">2013 - 2019</div>
+                </div>
+                <div class="item-subtitle">Mater Carmeli School</div>
+                <ul>
+                    <li>Consistent Honor Student</li>
+                    <li>Participated in Math Competition</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Academic Projects</div>
+                    <div class="item-date">2025 - Present</div>
+                </div>
+                <div class="item-subtitle">Pamantasan ng Lungsod ng Maynila</div>
+                <ul>
+                    <li>Developed responsive web pages using HTML and CSS</li>
+                    <li>Created personal portfolio website showcasing projects</li>
+                    <li>Collaborated with classmates on group programming assignments</li>
+                    <li>Participated in coding challenges and hackathons</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Student Volunteer</div>
+                    <div class="item-date">2023 - 2025</div>
+                </div>
+                <div class="item-subtitle">Caloocan National Science and Technology High School</div>
+                <ul>
+                    <li>Assisted in school computer laboratory maintenance</li>
+                    <li>Helped organize technology-related school events</li>
+                    <li>Provided basic technical support to teachers and students</li>
+                    <li>Participated in community outreach programs</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Peer Tutor</div>
+                    <div class="item-date">2022 - 2023</div>
+                </div>
+                <div class="item-subtitle">Caloocan City Business High School</div>
+                <ul>
+                    <li>Tutored classmates in mathematics and science subjects</li>
+                    <li>Assisted with computer literacy programs</li>
+                    <li>Helped organize study groups for exam preparation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Designing</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Team Collaboration</span>
+                <span class="skill">Communication</span>
+                <span class="skill">Time Management</span>
+                <span class="skill">Research</span>
+            </div>
+        </section>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025, Sophia Aranzamendez. Student Resume</p>
+    </div>
+</body>
+
+</html>
